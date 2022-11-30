@@ -1,0 +1,7 @@
+<%= form_for @post do |f| %>
+    <%= f.label :title, '商品名' %>
+    <%= f.text_area :title, :size => 140 %><br>
+    <%= f.label :body, '価格' %>
+    <%= f.text_area :body, :size => 140 %>
+    <%= f.submit '編集する' %>
+<% end %>

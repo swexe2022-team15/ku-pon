@@ -1,0 +1,15 @@
+<h1>ユーザー登録</h1>
+<%= form_for(@user, url: signup_path) do |f| %>
+  <%= f.label :age, 'age' %>
+  <%= f.text_field :age %><br>
+  <%= f.label :gender, 'gender' %>
+  <%= f.text_field :gender %><br>
+  <%= f.label :email, 'email' %>
+  <%= f.password_field :email %><br>
+  <%= f.label :password, 'パスワード' %>
+  <%= f.password_field :password %><br>
+  <%= f.label :password_confirmation, 'パスワード(確認)' %>
+  <%= f.password_field :password_confirmation %><br>
+  <%= f.submit '作成' %>
+<% end %>
+<%= link_to "back", "login" %>

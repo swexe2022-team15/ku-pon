@@ -1,0 +1,10 @@
+<h1><span id="i-6">ログイン</span></h1>
+<%= form_for(:session, url: login_path) do |f| %>
+　  <%= f.label :email %>
+　　<%= f.email_field :email %><br>
+　　<%= f.label :password %>
+　　<%= f.password_field :password %><br>
+　　<%= f.submit "ログイン" %>
+<% end %>
+<p>まだユーザー登録がお済みでない方はこちら <%= link_to "新規登録", signup_path %></p>
+<%= link_to "back", "/" %>

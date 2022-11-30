@@ -1,0 +1,11 @@
+<div class="option" >
+    <div class="favorite-btn">
+        <p><span>お気に入り登録: </span><%=link_to @post.likes.count, likes_path(@post.id), method: :post %></p>
+    </div>
+    <div class="report-btn">
+        <p><span>お気に入り解除: </span><%=link_to @post.likes.count, like_path(@post.id), method: :delete %></p>
+    </div>
+    <div class="count-btn">
+        <p><span>お気に入りされた数: </span><%= @post.likes.count %></p>
+    </div>
+</div>

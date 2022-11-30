@@ -1,0 +1,26 @@
+<h1>投稿一覧</h1>
+<% @posts.each do |f| %>
+  <% if f.end_on < Date.today %>
+  <% else %>
+    <div class="box2">
+      <div class="box2-title">
+         <p><%= @corporate.name %></p>
+        <%= f.title %>
+        <div class="box2-body">
+          <p>店頭税抜価格より：</p>
+          <%= link_to f.body, edit_post_path(f.id) %>円引き
+        </div>
+      </div>
+      <div class="box2-date">
+        開始　<%= f.start_on %><%= "　　" %>終了　<%= f.end_on %>
+      </div>
+      <p><%= render partial: 'special_posts', collection: @special_posts, as: :post %></p>
+    </div>
+  <% end %>
+<% end %>
+<br>
+
+<%= link_to 'show', '../users/show' %>
+<!-- <%= link_to 'corporate_login', corporate_login_path %> -->
+<%= link_to "back", root_path %>
+<%= link_to "logout", corporate_logout_path, method: :delete %>

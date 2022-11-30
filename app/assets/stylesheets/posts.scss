@@ -1,0 +1,42 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.box2 {
+    margin: 10px;//外側
+    padding: 4px;//内側
+    background: #5fc2f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+    box-sizing: border-box;
+    width: 50%;
+    height: 200px;
+    position: relative; left: 30%;
+    border: solid 3px #5fc2f5;
+    border-radius: 10px;
+}
+.box2 .box2-title{
+    background: #FFF;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 4px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    height: 130px;
+}
+.box2 .box2-title .box2-body{
+    padding-left: 4px;
+    text-align: left;
+}
+
+.box2 .box2-date{
+    margin: 2em 0;
+    font-size: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box2 p {
+    font-size: 0.5em;
+    padding: 10px 20px;
+    margin: 0;
+}

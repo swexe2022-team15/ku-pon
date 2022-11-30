@@ -1,0 +1,11 @@
+<h1><span id="i-6">ログイン</span></h1>
+<%= form_for(:corporate_user, url: corporate_login_path) do |f| %>
+　  <%= f.label :name %>
+　　<%= f.text_field :name %><br>
+　　<%= f.label :password %>
+　　<%= f.password_field :password %><br>
+　　<%= f.submit "ログイン" %>
+<% end %>
+<p>まだユーザー登録がお済みでない方はこちら <%= link_to "新規登録", corporate_signup_path %></p>
+<%= link_to "back", "/" %>
+　

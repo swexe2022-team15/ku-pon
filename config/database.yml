@@ -26,3 +26,7 @@ production:
   encoding: unicode
   pool: 5
   #database: db/production.sqlite3
+database: ku_pon_k0s2
+username: ku_pon_k0s2_user
+password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
+url: <%= ENV['DATABASE_URL'] %>
